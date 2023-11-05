@@ -6,6 +6,7 @@ import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../../firebase/firebase';
 
 
+
 export default function Contact() {
 
     const [name, setName] = useState("")

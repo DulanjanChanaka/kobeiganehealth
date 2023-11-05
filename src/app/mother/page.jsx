@@ -41,11 +41,11 @@ function Mother() {
 
 
           return (
-            <div key={item.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <h3>{item.title}</h3>
+            <div key={item.id} className="bg-white shadow-lg rounded-lg overflow-hidden pt-2">
+              <div className='text-center text-xl  '><h3>{item.title}</h3></div>
 
-              <div className="p-6">
-                <p>{item.january}</p>
+              <div className="p-6 ">
+                <p className=''>{item.january}</p>
                 <button
                   onClick={() => {
                     setSelectedPost(item);
