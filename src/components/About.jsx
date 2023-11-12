@@ -6,13 +6,13 @@ const About = () => {
   return (
     <>
      <Headline title='අප ගැන '/>
-    <div id='about'className='w-full  p-2 flex items-start py-10'>
+    {/* <div id='about'className=' w-full  p-2 flex items-start pb-10 p-1 '>
        
-        <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+        <div className='w-full m-auto md:grid grid-cols-3 gap-8 '>
             <div className='col-span-2'>
                 
-                <h2 className='py-4'></h2>
-                <p className='py-2 text-gray-600 text-center'>
+               
+                <p className='py-2 text-gray-600 text-center '>
                   බොරලුවැව සෞක්‍ය ප්‍රදේශයේ ජනතාව සඳහා ගුණාත්මක හා සේවාවන් කාර්යක්ෂමව ලබා දීම අපගේ අරමුණයි. මෙම web අඩවිය ඔබට සායන තොරතුරු , සෞක්‍ය අද්‍යාපනික තොරතුරු ඇතුළු පහසුකම් රැසක් ඔබට ලබා දී ඇත. ඔබගේ ගැටළු යොමු කිරීම හා සේවාවේ ගුණාත්මකභාවය ඉහල නැංවීම සඳහා ඔබගේ අදහස්ද අපට බොහෝ සෙයින් අගයයි . නිවැරදි තොරතුරු , නිවැරදි වෙලාවට ඔබට පහසුවෙන් ලබා ගත හැක .
 
 </p>
@@ -21,6 +21,21 @@ const About = () => {
                 <img className='rounded-xl' src='https://i.ibb.co/qdxbJBd/Whats-App-Image-2023-11-04-at-21-49-33-a7bbab1e.jpg' alt="Description of the image" ></img>
             </div>
         </div>
+    </div> */}
+    <div className=' p-5 lg:px-[100px]'>
+        <div className='bg-white lg:flex flex-row   shadow-xl '>
+            <div className='p-5 flex flex-col justify-center lg:w-3/5'>
+                <p className='text-xs '>DEVISION</p>
+                <h1 className='text-2xl pb-3 '>KOBEIGANE  MOH</h1>
+                <div className='h-[2px] bg-orange-400 w-[100px]'></div>
+                <p className='  text-sm pt-10 pb-5 '> බොරලුවැව සෞක්‍ය බල ප්‍රදේශයේ ජනතාව සඳහා ගුණාත්මක හා සේවාවන් කාර්යක්ෂමව ලබා දීම අපගේ අරමුණයි. මෙම web අඩවිය ඔබට සායන තොරතුරු , සෞක්‍ය අද්‍යාපනික තොරතුරු ඇතුළු පහසුකම් රැසක් ඔබට ලබා දී ඇත. ඔබගේ ගැටළු යොමු කිරීම හා සේවාවේ ගුණාත්මකභාවය ඉහල නැංවීම සඳහා ඔබගේ අදහස්ද අපට බොහෝ සෙයින් අගයයි . නිවැරදි තොරතුරු , නිවැරදි වෙලාවට ඔබට පහසුවෙන් ලබා ගත හැක .</p>
+                
+            </div>
+            <div className='lg:w-2/5 '>
+                <img src='https://i.ibb.co/qdxbJBd/Whats-App-Image-2023-11-04-at-21-49-33-a7bbab1e.jpg' alt="about" />
+            </div>
+        </div>
+        
     </div>
     </>
   )

@@ -38,14 +38,10 @@ export default function Contact() {
     return (
         <div id='contact' className='w-full  '>
             <Headline title={" ගැටළු / ප්‍රතිචාර"} />
-            <div className='lg:mx-[150px] mb-10 px-5 pt-8 pb-10'>
-             
-                
-
-
-
-                <div className='col-span-3 w-full h-auto shadow-lg shadow-gray-400 rounded-xl lg:p-4 pb-5'>
-                    <div className='p-4'>
+            <div className='bg-[url(https://www.outercape.org/wp-content/uploads/2021/05/hero-contact.jpg)] bg-cover bg-center mt-3'>
+            <div className='lg:w-[600px] mb-10 px-5 pt-8 pb-10 '>
+                <div className='col-span-3 w-full h-auto shadow-lg  rounded-xl lg:px-4 pb-5 backdrop-blur-sm bg-white/50  drop-shadow-md'>
+                    <div className='p-4 '>
                         <form
                             onSubmit={handleSubmit}
 
@@ -54,7 +50,7 @@ export default function Contact() {
                                 <div className='flex flex-col'>
                                     <label className='uppercase text-sm py-2'>Name</label>
                                     <input
-                                        className='border-2 rounded-lg p-3 flex border-gray-300'
+                                        className='border-2 rounded-lg p-2 flex border-gray-300'
                                         type='text'
                                         name='name'
                                         value={name}
@@ -67,7 +63,7 @@ export default function Contact() {
                                         Phone Number
                                     </label>
                                     <input
-                                        className='border-2 rounded-lg p-3 flex border-gray-300'
+                                        className='border-2 rounded-lg p-2 flex border-gray-300'
                                         type='text'
                                         name='phone'
                                         value={cno}
@@ -76,20 +72,20 @@ export default function Contact() {
                                     />
                                 </div>
                             </div>
-                   
-                            <div className='flex flex-col py-2'>
+
+                            <div className='flex flex-col '>
                                 <label className='uppercase text-sm py-2'>Message</label>
                                 <textarea
                                     className='border-2 rounded-lg p-3 border-gray-300'
-                                    rows='5'
+                                    rows='3'
                                     name='message'
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
                                     required
                                 ></textarea>
                             </div>
-                            <button className='w-full p-4 text-gray-100 mt-4'>
-                                Send Message
+                            <button className='w-full p-2 text-gray-100 mt-4'>
+                                Send 
                             </button>
                         </form>
 
@@ -98,10 +94,10 @@ export default function Contact() {
 
                 </div>
 
-                
+
 
             </div>
-
+            </div>
         </div>
     );
 }

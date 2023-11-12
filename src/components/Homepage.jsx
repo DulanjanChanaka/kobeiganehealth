@@ -1,12 +1,10 @@
-import Image from 'next/image'
 import React from 'react'
-
 
 const Homepage = () => {
   return (
     <div>
-        <div className='w-full h-50vh pt-10'>
-            <Image src='/Assets/hero.jpg' width={1000} height={600} alt='baby' className='w-full lg:h-[700px]'/>
+        <div className='w-full lg:h-[600px] pt-[50px]'>
+            <img src='https://cdn.cdnparenting.com/articles/2020/05/14112249/1531703333.jpg'  className='top-0 left-0 w-full h-full object-cover'/>
         </div>
     </div>
   )

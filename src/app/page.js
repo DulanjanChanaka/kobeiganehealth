@@ -14,8 +14,9 @@ export default function Home() {
   <Homepage/>
   <Clinics/>
   <Educational/>
-  <Contact/>
   <About/>
+  <Contact/>
+  
   <Footer/>
 </div>
   )

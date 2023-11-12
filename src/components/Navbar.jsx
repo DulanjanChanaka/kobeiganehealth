@@ -49,7 +49,11 @@ const Navbar = () => {
     <div style={{backgroundColor: `${navBg}`}} className={shadow? 'fixed top-0 left-0 w-full h-20 shadow-xl z-[100]': 'fixed w-full h-20 z-[100]'}>
         <div className='flex justify-between  items-center w-full h-full px-2 2xl:px-16'>
           <Link href='/'>
-        <img src='https://i.ibb.co/2SjwXsP/logomain.png' width='64' height='64' alt='/' className='rounded-lg'/></Link>
+            <div>
+            <img src='https://i.ibb.co/2SjwXsP/logomain.png' width='64' height='64' alt='/' className='rounded-lg'/>
+            <h3 className=' text-xs'>KOBEIGANE</h3>
+            </div>
+        </Link>
            
            <div>
             <ul style={{color: `${linkColor}`}} className='hidden md:flex'>
