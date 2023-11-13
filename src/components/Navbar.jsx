@@ -1,5 +1,6 @@
 "use client" 
 
+import Image from 'next/image'
 import Link from 'next/link'
 import React  from 'react'
 import {useState, useEffect} from 'react'
@@ -50,7 +51,7 @@ const Navbar = () => {
         <div className='flex justify-between  items-center w-full h-full px-2 2xl:px-16'>
           <Link href='/'>
             <div>
-            <img src='https://i.ibb.co/2SjwXsP/logomain.png' width='64' height='64' alt='/' className='rounded-lg'/>
+            <Image src='/Assets/logomain.png' width='64' height='64' alt='/' className='rounded-lg'/>
             <h3 className=' text-xs'>KOBEIGANE</h3>
             </div>
         </Link>
@@ -107,7 +108,7 @@ const Navbar = () => {
                 <div>
                     <div className='flex w-full items-center justify-between'>
                       <Link href='/'>
-                    <img src='https://i.ibb.co/2SjwXsP/logomain.png' width='94' height='94' alt='/' className='rounded-lg'/></Link>
+                    <Image src='/Assets/logomain.png' width='94' height='94' alt='/' className='rounded-lg'/></Link>
                         <div onClick={handleNav}className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                             <AiOutlineClose/>
                         </div>
