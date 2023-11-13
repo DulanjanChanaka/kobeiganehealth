@@ -32,7 +32,7 @@ const About = () => {
                 
             </div>
             <div className='lg:w-2/5 '>
-                <img src='https://i.ibb.co/qdxbJBd/Whats-App-Image-2023-11-04-at-21-49-33-a7bbab1e.jpg' alt="about" />
+                <img src='/Assets/about.jpg' alt="about" />
             </div>
         </div>
         
