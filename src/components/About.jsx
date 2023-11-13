@@ -7,7 +7,7 @@ const About = () => {
     <>
      <Headline title='අප ගැන '/>
 
-    <div className=' p-5 lg:px-[100px] '>
+    <div className=' p-5 lg:px-[200px] '>
         <div className=' lg:flex flex-row   shadow-xl backdrop-blur-sm bg-white/70  drop-shadow-md rounded-lg '>
             <div className='p-5 flex flex-col justify-center lg:w-3/5'>
                 <p className='text-xs '>DEVISION</p>
