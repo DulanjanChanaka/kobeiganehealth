@@ -40,7 +40,7 @@ export default function Contact() {
             <Headline title={" ගැටළු / ප්‍රතිචාර"} />
             <div className='bg-[url(https://www.outercape.org/wp-content/uploads/2021/05/hero-contact.jpg)] bg-cover bg-center mt-3'>
             <div className='lg:w-[600px] mb-10 px-5 pt-8 pb-10 '>
-                <div className='col-span-3 w-full h-auto shadow-lg  rounded-xl lg:px-4 pb-5 backdrop-blur-sm bg-white/50  drop-shadow-md'>
+                <div className='col-span-3 w-full h-auto shadow-lg  rounded-xl lg:px-4 pb-5 backdrop-blur-sm bg-white/70  drop-shadow-md'>
                     <div className='p-4 '>
                         <form
                             onSubmit={handleSubmit}
