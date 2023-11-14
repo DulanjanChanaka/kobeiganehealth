@@ -11,11 +11,15 @@ export default function Home() {
   return (
 <div>
   <Navbar/>
-  <Homepage/>
-  {/* <Clinics/> */}
-  <Educational/>
-  <About/>
-  <Contact/>
+  {/* <Homepage/> */}
+  <Clinics/>
+  <Clinics/>
+  <Clinics/>
+  <Clinics/>
+  <Clinics/>
+  {/* <Educational/> */}
+  {/* <About/> */}
+  {/* <Contact/> */}
   
   <Footer/>
 </div>
