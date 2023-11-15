@@ -1,4 +1,4 @@
-"use client"
+
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import './globals.css';
