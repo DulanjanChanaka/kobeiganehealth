@@ -6,9 +6,9 @@ import Image from 'next/image'
 
 const Clinics = () => {
     return (
-        <div id='category' className='w-full lg:h-screen p-2'>
+        <div id='category' className='w-full  p-2'>
         <div className='px-10 mx-auto flex flex-col justify-center h-full'>
-        <Headline title="Clinics"/>
+        <Headline  title="Clinics"/>
             
             
             <div className='grid lg:grid-cols-4 gap-8'>
@@ -16,7 +16,7 @@ const Clinics = () => {
 
  
 
-           <Link href="/category/bathroomfaucets">
+            <Link href='/weight'>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300' >
             <div className='grid grid-cols  text-center  justify-center items-center'>
                 <div className='m-auto'>
@@ -28,7 +28,7 @@ const Clinics = () => {
             </div>
             </div> 
             </Link>  
-            <Link href="/category/cabinets">
+            <Link href='/hospital'>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols text-center gap-4 justify-center items-center'>
                 <div className='m-auto'>
@@ -41,7 +41,7 @@ const Clinics = () => {
             </div> 
             </Link>
 
-            <Link href="/category/mirrors">
+            <Link href='/mother'>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                 <div className='m-auto'>
@@ -54,7 +54,7 @@ const Clinics = () => {
             </div> 
             </Link>
 
-            <Link href="/category/lighting">
+            <Link href='/moh'>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                 <div className='m-auto'>
@@ -67,7 +67,7 @@ const Clinics = () => {
             </div> 
             </Link>
 
-            <Link href="/category/tile">
+            <Link href='/woman'>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                 <div className='m-auto'>
@@ -80,7 +80,7 @@ const Clinics = () => {
             </div> 
             </Link>
 
-            <Link href="/category/towelbar">
+            <Link href='/thriposha'>
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                 <div className='m-auto'>
@@ -93,7 +93,7 @@ const Clinics = () => {
             </div> 
             </Link>
 
-            <Link href="/category/accessories">
+            <Link href="/">
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols text-center  gap-4 justify-center items-center'>
                 <div className='m-auto'>
