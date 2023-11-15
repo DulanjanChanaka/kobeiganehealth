@@ -37,7 +37,7 @@ export default function Contact() {
 
     return (
         <div id='contact' className='w-full  '>
-            <Headline title={" ගැටළු / ප්‍රතිචාර "} />
+            <Headline title={"Contact"} />
             <div className='bg-[url(https://www.outercape.org/wp-content/uploads/2021/05/hero-contact.jpg)] bg-cover bg-center mt-3 lg:pl-32'>
             <div className='lg:w-[600px] mb-10 px-5 pt-8 pb-10 '>
                 <div className='col-span-3 w-full h-auto shadow-lg  rounded-xl lg:px-4 pb-5 backdrop-blur-sm bg-white/70  drop-shadow-md'>
