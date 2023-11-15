@@ -20,7 +20,7 @@ const Clinics = () => {
                                 <Image src='/Assets/weight.jpg' width='94' height='94' alt='/' className='rounded-lg'/>
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold '>බර කිරීමේ සායන  </h3>
+                                    <h3 className='text-center text-lg font-bold '>බර කිරීමේ සායන</h3>
                                 </div>
                             </div>
                         </div>
@@ -33,7 +33,7 @@ const Clinics = () => {
                                 <Image src='/Assets/hospital.png' width='94' height='94' alt='/' className='rounded-lg'/>
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold'>රෝහල් සායන </h3>
+                                    <h3 className='text-center text-lg font-bold'>රෝහල් සායන</h3>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const Clinics = () => {
                                 <Image src='/Assets/mother.jpg' width='94' height='94' alt='/' className='rounded-lg'/>
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold'>මාතෘ හා ළමා සායන  </h3>
+                                    <h3 className='text-center text-lg font-bold'>මාතෘ හා ළමා සායන</h3>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ const Clinics = () => {
                                 <Image src='/Assets/moh.jpg' width='94' height='94' alt='/' className='rounded-lg'/>
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold'>MOH සායන </h3>
+                                    <h3 className='text-center text-lg font-bold'>MOH සායන</h3>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ const Clinics = () => {
                                 <Image src='/Assets/thriposha.jpg' width='94' height='94' alt='/' className='rounded-lg'/>
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold'>ත්‍රිපෝෂ ලබා දීම </h3>
+                                    <h3 className='text-center text-lg font-bold'>ත්‍රීපෝෂ ලබා දීම</h3>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ const Clinics = () => {
                                 <Image src='/Assets/drugs.png' width='94' height='94' alt='/' className='rounded-lg'/>
                                 </div>
                                 <div className='flex flex-col items-center justify-center text-center'>
-                                    <h3 className='text-center text-lg font-bold'>මාසික ඖෂධ සායන </h3>
+                                    <h3 className='text-center text-lg font-bold'>මාසික ඖෂධ සායන</h3>
                                 </div>
                             </div>
                         </div>

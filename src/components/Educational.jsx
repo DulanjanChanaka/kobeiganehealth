@@ -4,7 +4,7 @@ import Headline from './Headline'
 function Educational() {
   return (
     <div id='contact' className='w-full  '>
-            <Headline title={" අධ්‍යාපනික "} />
+            <Headline title={" අධ්‍යාපනික  "} />
             <div className='lg:mx-[150px] mb-10 px-5 pt-8 pb-10 text-center'>
              
                 <h2>Coming Soon</h2>
