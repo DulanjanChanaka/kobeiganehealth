@@ -57,47 +57,47 @@ return (
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>february: {item.february}</p>
+                            <p>February: {item.february}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>march: {item.march}</p>
+                            <p>March: {item.march}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>april: {item.april}</p>
+                            <p>April: {item.april}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>may: {item.may}</p>
+                            <p>May: {item.may}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>june: {item.june}</p>
+                            <p>June: {item.june}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>july: {item.july}</p>
+                            <p>July: {item.july}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>august: {item.august}</p>
+                            <p>August: {item.august}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>september: {item.september}</p>
+                            <p>September: {item.september}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>october: {item.october}</p>
+                            <p>October: {item.october}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>november: {item.november}</p>
+                            <p>November: {item.november}</p>
                         </div>
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
-                            <p>december: {item.december}</p>
+                            <p>December: {item.december}</p>
                         </div>
                     </div>
                 ) 
