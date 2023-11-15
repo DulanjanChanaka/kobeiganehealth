@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+body {
+  font-family: 'Iskoola Pota', sans-serif;
+}
+
+/* Add other global styles as needed */
 
 
 @layer base {
