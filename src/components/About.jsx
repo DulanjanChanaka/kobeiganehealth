@@ -10,7 +10,7 @@ const About = () => {
 
         <div className=' m-auto md:grid grid-cols-3 gap-8 bg-white  '>
 
-          <div className='col-span-2 lg:w-4/5  px-3'>
+          <div className='col-span-2   px-3'>
 
 
             <p className='uppercase text-xl tracking-widest text-[#5651e5]'></p>
