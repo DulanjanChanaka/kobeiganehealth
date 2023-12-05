@@ -17,90 +17,103 @@ const Clinics = () => {
 
 
                     <Link href='/weight'>
-                        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]' >
+                        <div className='p-6 bg-slate-50  shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]' >
                             <div className='grid grid-cols  text-center  justify-center items-center'>
                                 <div className='m-auto'>
                                     <Image src='/Assets/weight.png' width='94' height='94' alt='/' className='rounded-lg' />
                                 </div>
                                 <div className=''>
-                                    <h3 className='text-center text-lg font-bold '>Weight</h3>
+                                    <h3 className='text-center text-lg font-bold '>බර කිරීමේ සායනය </h3>
                                 </div>
                             </div>
                         </div>
                     </Link>
                     <Link href='/hospital'>
-                        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
+                        <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols text-center gap-4 justify-center items-center'>
                                 <div className='m-auto'>
                                     <Image src='/Assets/hospital.png' width={94} height={94} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3>Hospital</h3>
+                                    <h3 className='text-center text-lg font-bold '>රෝහල් සායන</h3>
                                 </div>
                             </div>
                         </div>
                     </Link>
 
                     <Link href='/mother'>
-                        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
+                        <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                                 <div className='m-auto'>
                                     <Image src='/Assets/mother.png' width={94} height={94} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3>Mother and Baby</h3>
+                                    <h3 className='text-center text-lg font-bold '>මාතෘ හා ළඳරු සායන</h3>
                                 </div>
                             </div>
                         </div>
                     </Link>
 
                     <Link href='/moh'>
-                        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
+                        <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                                 <div className='m-auto'>
                                     <img src='/Assets/moh.png' width={94} height={94} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3>MOH</h3>
+                                    <h3 className='text-center text-lg font-bold '>MOH සායන </h3>
                                 </div>
                             </div>
                         </div>
                     </Link>
 
                     <Link href='/woman'>
-                        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
+                        <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                                 <div className='m-auto'>
                                     <img src='/Assets/women.png' width={94} height={94} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3>Well Woman</h3>
+                                    <h3 className='text-center text-lg font-bold '>සුවනාරි සායන </h3>
                                 </div>
                             </div>
                         </div>
                     </Link>
 
                     <Link href='/thriposha'>
-                        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
+                        <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                                 <div className='m-auto'>
                                     <img src='/Assets/thriposha.png' width={94} height={94} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3>Threeposha</h3>
+                                    <h3 className='text-center text-lg font-bold '>ත්‍රිපෝෂ බෙදා දීම </h3>
                                 </div>
                             </div>
                         </div>
                     </Link>
 
-                    <Link href="/">
-                        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
+                    <Link href="/medical">
+                        <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols text-center  gap-4 justify-center items-center'>
                                 <div className='m-auto'>
                                     <img src='/Assets/drugs.png' width={94} height={94} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3>Monthly</h3>
+                                    <h3 className='text-center text-lg font-bold '>ඖෂධ සායන</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link href="/telephone">
+                        <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
+                            <div className='grid grid-cols text-center  gap-4 justify-center items-center'>
+                                <div className='m-auto'>
+                                    <img src='/Assets/telephone.png' width={94} height={94} alt='/' className='rounded-lg' />
+                                </div>
+                                <div className='flex flex-col items-center justify-center'>
+                                    <h3 className='text-center text-lg font-bold '>දුරකථන අංක </h3>
                                 </div>
                             </div>
                         </div>

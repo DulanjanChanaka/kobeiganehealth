@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
       
 
       <Head>
+        
      
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>

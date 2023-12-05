@@ -42,14 +42,18 @@ function Moh() {
             <div className="top-0 left-0 sticky">
                 <Navbar />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-[90px] md:pt-[100px] lg:grid-cols-4 gap-4 p-4">
+            <h3 className='text-center pt-[120px] font-semibold text-2xl'>MOH සායන  </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-[50px]  lg:grid-cols-4 gap-4 p-4">
+            
                 {personPost.map((item) => {
                     // Check if the item's date is equal to today's date
 
 
                     return (
                         <div key={item.id} className="bg-white shadow-lg rounded-lg overflow-hidden ">
+                            
                             <div className='text-center pt-5 '>
+                            
                             <h3 className='font-bold'>{item.title}</h3>
                             </div>
                             
@@ -79,41 +83,41 @@ function Moh() {
                           <h3 className='pb-5'>{selectedPost.title}</h3>
 
 
-                            <p className="text-gray-600 text-sm pb-5">
-                                january: {selectedPost.january}
+                          <p className="text-gray-600 text-base font-semibold py-3">
+                                January: <span className='text-blue-600  px-10'>{selectedPost.january}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            february: {selectedPost.february}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                February: <span className='text-blue-600  px-10'>{selectedPost.february}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            march: {selectedPost.march}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                March: <span className='text-blue-600  px-10'>{selectedPost.march}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            april: {selectedPost.april}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                April: <span className='text-blue-600  px-10'>{selectedPost.april}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            may: {selectedPost.may}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                May: <span className='text-blue-600  px-10'>{selectedPost.may}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            june: {selectedPost.march}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                June: <span className='text-blue-600  px-10'>{selectedPost.march}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            july: {selectedPost.july}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                July: <span className='text-blue-600  px-10'>{selectedPost.july}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            august: {selectedPost.august}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                August: <span className='text-blue-600  px-10'>{selectedPost.august}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            september: {selectedPost.september}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                September: <span className='text-blue-600  px-10'>{selectedPost.september}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            october: {selectedPost.october}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                October: <span className='text-blue-600  px-10'>{selectedPost.october}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            november: {selectedPost.november}
+                            <p className="text-gray-600 text-base font-semibold py-3">
+                                November: <span className='text-blue-600  px-10'>{selectedPost.november}</span>
                             </p>
-                            <p className="text-gray-600 text-sm pb-5">
-                            december: {selectedPost.december}
+                            <p className="text-gray-600 text-base font-semibold py-3 mb-5">
+                                December: <span className='text-blue-600  px-10'>{selectedPost.december}</span>
                             </p>
 
                             <button

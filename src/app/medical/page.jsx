@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Threeposha() {
+function Medical() {
   return (
     <div>page</div>
   )
 }
 
-export default Threeposha
+export default Medical
