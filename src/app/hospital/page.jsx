@@ -7,13 +7,14 @@ import { collection, doc, getDocs, query, where } from 'firebase/firestore';
 
 import { db } from '../../../firebase/firebase';
 import Navbar from '@/components/Navbar';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Hospital() {
 
 
 const [personPost, setPersonPost] = useState([]);
-const [selectedPost, setSelectedPost] = useState(null);
-const [modalVisible, setModalVisible] = useState(false);
+const [loading, setLoading] = useState(true)
 
 
 
@@ -28,6 +29,7 @@ useEffect(() => {
                 ...doc.data(),
             }));
             setPersonPost(returnPostData);
+            setLoading(false)
         } catch (error) {
             console.error('Error fetching item posts:', error);
         }
@@ -44,7 +46,13 @@ return (
             </div>
         <div className="pt-[80px] ">
         <h3 className='text-center font-semibold text-2xl pt-[30px]'>රෝහල් සායන </h3>
-            {personPost.map((item) => {
+        {loading? (   <Backdrop
+            sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            open={loading}
+            onClick={() => {}}
+          >
+            <CircularProgress color="inherit" />
+          </Backdrop>):( personPost.map((item) => {
                 // Check if the item's date is equal to today's date
                 
 
@@ -125,7 +133,8 @@ return (
                         </div>
                     </div>
                 ) 
-            })}
+            }))}
+           
         </div>
 
 

@@ -6,10 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase/firebase';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Educational() {
 
   const [data, setData] = useState([])
+  const [loading, setLoading] = useState(true)
 
 useEffect(()=>{
   const fetchData = async () => {
@@ -22,6 +25,7 @@ useEffect(()=>{
           ...doc.data()
         }})
     setData(postData)
+    setLoading(false)
   } catch (error) {
     console.error('Error fetching item posts:', error);
   }
@@ -75,8 +79,14 @@ useEffect(()=>{
     <div id='education' className='w-full'>
       <Headline title={" Educational "} />
       <div className=' mb-10 px-10 rounded-2xl   pt-8 pb-10  text-center'>
-        <Slider {...settings}>
-          {data.map((item) => (
+        
+          {loading? (<Backdrop
+            sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            open={loading}
+            onClick={() => {}}
+          >
+            <CircularProgress color="inherit" />
+          </Backdrop>):(<Slider {...settings}>{data.map((item) => (
             <div className=' h-[350px]    ' key={item.id}>
 
               <div className='mx-2 bg-gray-400 rounded-2xl'>
@@ -95,8 +105,9 @@ useEffect(()=>{
                 </div>
               </div>
             </div>
-          ))}
-        </Slider>
+          ))} </Slider>)}
+          
+       
       </div>
       {modalVisible && selectedPost && (
         <div className='fixed top-0 left-0 w-full h-full flex item-center justify-center'>

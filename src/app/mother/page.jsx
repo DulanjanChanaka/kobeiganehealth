@@ -5,11 +5,14 @@ import { collection, doc, getDocs, query, where } from 'firebase/firestore';
 
 import { db } from '../../../firebase/firebase';
 import Navbar from '@/components/Navbar';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Mother() {
   const [personPost, setPersonPost] = useState([]);
   const [selectedPost, setSelectedPost] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
+  const [loading, setLoading] = useState(true)
 
 
 
@@ -24,6 +27,7 @@ function Mother() {
           ...doc.data(),
         }));
         setPersonPost(returnPostData);
+        setLoading(false)
       } catch (error) {
         console.error('Error fetching item posts:', error);
       }
@@ -37,8 +41,13 @@ function Mother() {
             </div>
             <h3 className='text-center font-semibold text-2xl pt-[120px]'>මාතෘ හා ළමා සායන </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4  pt-[50px]">
-      
-        {personPost.map((item) => {
+        {loading? (<Backdrop
+            sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            open={loading}
+            onClick={() => {}}
+          >
+            <CircularProgress color="inherit" />
+          </Backdrop>):(personPost.map((item) => {
           // Check if the item's date is equal to today's date
 
 
@@ -60,7 +69,9 @@ function Mother() {
               </div>
             </div>
           )
-        })}
+        }))}
+      
+       
       </div>
 
       

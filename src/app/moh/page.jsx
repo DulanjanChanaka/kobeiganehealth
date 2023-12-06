@@ -7,6 +7,8 @@ import { collection, doc, getDocs, query, where } from 'firebase/firestore';
 
 import { db } from '../../../firebase/firebase';
 import Navbar from '@/components/Navbar';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Moh() {
 
@@ -14,6 +16,7 @@ function Moh() {
     const [personPost, setPersonPost] = useState([]);
     const [selectedPost, setSelectedPost] = useState(null);
     const [modalVisible, setModalVisible] = useState(false);
+    const [loading, setLoading] = useState(true)
 
 
 
@@ -28,6 +31,7 @@ function Moh() {
                     ...doc.data(),
                 }));
                 setPersonPost(returnPostData);
+                setLoading(false)
             } catch (error) {
                 console.error('Error fetching item posts:', error);
             }
@@ -44,8 +48,13 @@ function Moh() {
             </div>
             <h3 className='text-center pt-[120px] font-semibold text-2xl'>MOH සායන  </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-[50px]  lg:grid-cols-4 gap-4 p-4">
-            
-                {personPost.map((item) => {
+                {loading? (<Backdrop
+            sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            open={loading}
+            onClick={() => {}}
+          >
+            <CircularProgress color="inherit" />
+          </Backdrop>):(personPost.map((item) => {
                     // Check if the item's date is equal to today's date
 
 
@@ -72,7 +81,9 @@ function Moh() {
                             </div>
                         </div>
                     )
-                })}
+                }))}
+            
+                
             </div>
 
             {modalVisible && selectedPost && (
