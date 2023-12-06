@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Clinics = () => {
     return (
-        <div id='category' className='w-full  p-2'>
+        <div id='clinics' className='w-full  p-2'>
             <div className='px-10 mx-auto flex flex-col justify-center h-full'>
                 <Headline title="Clinics" />
 

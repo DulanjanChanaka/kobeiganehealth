@@ -72,7 +72,7 @@ useEffect(()=>{
     ]
   }
   return (
-    <div id='contact' className='w-full'>
+    <div id='education' className='w-full'>
       <Headline title={" Educational "} />
       <div className=' mb-10 px-10 rounded-2xl   pt-8 pb-10  text-center'>
         <Slider {...settings}>

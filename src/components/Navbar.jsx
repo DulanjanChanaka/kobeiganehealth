@@ -65,21 +65,21 @@ const Navbar = () => {
         onClick={() => handleItemClick('item1')}
       >Home</li>
                 </Link>
-                <Link href='/#about'>
+                <Link href='/#clinics'>
                 <li
         className={`ml-10 text-sm uppercase hover:border-b-2 hover:text-[#5651e5] ${activeItem === 'item2' ? 'border-black' : ''}`}
         style={{ borderBottomWidth: activeItem === 'item2' ? '1px' : '0px' }}
         onClick={() => handleItemClick('item2')}
       >Clinics</li>
                 </Link>
-                <Link href='/#skills'>
+                <Link href='/#education'>
                 <li
         className={`ml-10 text-sm uppercase hover:border-b-2 hover:text-[#5651e5] ${activeItem === 'item3' ? 'border-black' : ''}`}
         style={{ borderBottomWidth: activeItem === 'item3' ? '1px' : '0px' }}
         onClick={() => handleItemClick('item3')}
       >Announcement</li>
                 </Link>
-                <Link href='/#projects'>
+                <Link href='/#about'>
                 <li
         className={`ml-10 text-sm uppercase hover:border-b-2 hover:text-[#5651e5] ${activeItem === 'item4' ? 'border-black' : ''}`}
         style={{ borderBottomWidth: activeItem === 'item4' ? '1px' : '0px' }}
@@ -122,13 +122,13 @@ const Navbar = () => {
                         <Link href='/'>
                         <li onClick={()=> setNav(false)} className='py-4 text-sm'>Home</li>
                         </Link>
-                        <Link href='/#about'>
+                        <Link href='/#clinics'>
                         <li onClick={()=> setNav(false)} className='py-4 text-sm'>Clinics</li>
                         </Link>
-                        <Link href='/#skills'>
+                        <Link href='/#education'>
                         <li onClick={()=> setNav(false)} className='py-4 text-sm'>Announcement</li>
                         </Link>
-                        <Link href='/#projects'>
+                        <Link href='/#about'>
                         <li onClick={()=> setNav(false)} className='py-4 text-sm'>About</li>
                         </Link>
                         <Link href='/#contact'>

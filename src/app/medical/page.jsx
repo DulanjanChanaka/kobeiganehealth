@@ -2,7 +2,7 @@ import React from 'react'
 
 function Medical() {
   return (
-    <div>page</div>
+    <div>Coming Soon</div>
   )
 }
 
