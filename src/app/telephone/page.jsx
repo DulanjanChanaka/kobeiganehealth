@@ -28,7 +28,7 @@ function Telephone() {
             </div>
             <div className='pt-[100px] px-3 grid grid-cols-1 lg:grid-cols-3 gap-3'>
             {data.map((item, index)=>(
-        <div className='px-3 py-2 bg-blue-300 mb-2 rounded-lg '>
+        <div key={index} className='px-3 py-2 bg-blue-300 mb-2 rounded-lg '>
           <div className='text-center text-lg font-bold'>{item.hospital}</div>
           <div className='text-center'>{item.tel}</div>
         </div>
