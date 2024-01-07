@@ -35,7 +35,7 @@ const Clinics = () => {
                                     <Image src='/Assets/hospital.png' width={94} height={94} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold '>රෝහල් සායන</h3>
+                                    <h3 className='text-center text-lg font-bold '>කොබෙ/ රෝහල් සායන</h3>
                                 </div>
                             </div>
                         </div>
@@ -97,10 +97,10 @@ const Clinics = () => {
                         <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols text-center  gap-4 justify-center items-center'>
                                 <div className='m-auto'>
-                                    <img src='/Assets/drugs.png' width={94} height={94} alt='/' className='rounded-lg' />
+                                    <img src='/Assets/baby.png' width={94} height={94} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold '>ඖෂධ සායන</h3>
+                                    <h3 className='text-center text-lg font-bold '>ඔබේ දරුවාගේ සායන </h3>
                                 </div>
                             </div>
                         </div>
