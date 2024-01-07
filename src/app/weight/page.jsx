@@ -65,7 +65,7 @@ function Weight() {
               </div>
 
               <div className="p-6">
-                <p>{item.january}</p>
+                
                 <button
                   onClick={() => {
                     setSelectedPost(item);

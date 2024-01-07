@@ -56,7 +56,7 @@ function Mother() {
               <div className='text-center text-xl  '><h3>{item.title}</h3></div>
 
               <div className="p-6 ">
-                <p className=''>{item.january}</p>
+               
                 <button
                   onClick={() => {
                     setSelectedPost(item);
