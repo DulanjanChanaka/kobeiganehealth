@@ -54,7 +54,7 @@ const BabyComponent = () => {
         <Backdrop
           sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
           open={loading}
-          onClick={() => {}}
+          onClick={() => { }}
         >
           <CircularProgress color="inherit" />
         </Backdrop>
@@ -69,6 +69,8 @@ const BabyComponent = () => {
                     <p>Name: {baby.name}</p>
                     <p>Mother: {baby.mother}</p>
                     <p>Address: {baby.address}</p>
+                    <p>Birthdate: {baby.birthday}</p>
+                    <p>Age: {calculateAge(baby.birthday).year} years, {calculateAge(baby.birthday).month} months, {calculateAge(baby.birthday).day} days</p>
                   </div>
                 </div>
               ))}
