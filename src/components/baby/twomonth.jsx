@@ -65,12 +65,12 @@ const BabyComponent = () => {
               <h2 className='text-center text-2xl'>මාස 2 කණ්ඩායම</h2>
               {filteredBabies.map((baby, index) => (
                 <div key={index} className='m-2'>
-                  <div className=' bg-sky-200 py-3 px-2 rounded-lg '>
-                    <p>Name: {baby.name}</p>
-                    <p>Mother: {baby.mother}</p>
-                    <p>Address: {baby.address}</p>
-                    <p>Birthdate: {baby.birthday}</p>
-                    <p>Age: {calculateAge(baby.birthday).year} years, {calculateAge(baby.birthday).month} months, {calculateAge(baby.birthday).day} days</p>
+                  <div className=' bg-sky-200 py-3 px-2 rounded-lg leading-8 '>
+                    <p className='font-semibold'>Name: <span className='font-normal text-blue-700'>{baby.name}</span></p>
+                    <p className='font-semibold'>Mother: <span className='font-normal text-blue-700'>{baby.mother}</span></p>
+                    <p className='font-semibold'>Address: <span className='font-normal text-blue-700'>{baby.address}</span></p>
+                    <p className='font-semibold'>Birthdate: <span className='font-normal text-blue-700'>{baby.birthday}</span></p>
+                    <p className='font-semibold'>Age: {calculateAge(baby.birthday).year} Y, {calculateAge(baby.birthday).month} M, {calculateAge(baby.birthday).day} D</p>
                   </div>
                 </div>
               ))}

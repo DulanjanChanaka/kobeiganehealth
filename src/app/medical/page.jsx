@@ -43,17 +43,17 @@ function Medical() {
       <div className="top-0 left-0 sticky">
         <Navbar />
       </div>
-      <div className='pt-[100px]'>
-        <ul className='flex lg:flex-row flex-col gap-5  mx-5 text-center text-white py-2'>
-          <li onClick={() => { handleMonthClick('2 Month'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg cursor-pointer'>2 Month</li>
-          <li onClick={() => handleMonthClick('4 Month')} className='bg-blue-500 py-2 rounded-lg cursor-pointer'>4 Month</li>
-          {/* Add onClick handlers for other months as needed */}
-          <li onClick={() => { handleMonthClick('6 Month'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg'>6 Month</li>
-          <li onClick={() => { handleMonthClick('9 Month'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg'>9 Month</li>
-          <li onClick={() => { handleMonthClick('1 year'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg'>12 Month (1 Year)</li>
-          <li onClick={() => { handleMonthClick('onehalf years'); setModalVisible(true); }}  className='bg-blue-500 py-2 rounded-lg'>18 Month (1 1/2 Years)</li>
-          <li onClick={() => { handleMonthClick('3 years'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg'>3 Years</li>
-          <li onClick={() => { handleMonthClick('5 years'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg'>5 Years</li>
+      <div className='pt-[100px] '>
+        <ul className='flex lg:grid-cols-2 lg:grid  flex-col gap-5  mx-5 text-center text-white py-2 lg:mx-40 lg:pt-10'>
+          <li onClick={() => { handleMonthClick('2 Month'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg cursor-pointer lg:py-5'>2 Month</li>
+          <li onClick={() => handleMonthClick('4 Month')} className='bg-blue-500 py-2 rounded-lg cursor-pointer lg:py-5'>4 Month</li>
+         
+          <li onClick={() => { handleMonthClick('6 Month'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>6 Month</li>
+          <li onClick={() => { handleMonthClick('9 Month'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>9 Month</li>
+          <li onClick={() => { handleMonthClick('1 year'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>12 Month (1 Year)</li>
+          <li onClick={() => { handleMonthClick('onehalf years'); setModalVisible(true); }}  className='bg-blue-500 py-2 rounded-lg lg:py-5'>18 Month (1 1/2 Years)</li>
+          <li onClick={() => { handleMonthClick('3 years'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>3 Years</li>
+          <li onClick={() => { handleMonthClick('5 years'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>5 Years</li>
         </ul>
 
         {modalVisible &&  (
