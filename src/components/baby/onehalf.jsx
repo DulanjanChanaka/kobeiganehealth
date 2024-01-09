@@ -48,7 +48,7 @@ const Onehalf = () => {
   }, []); // Run the effect only once on component mount
 
   return (
-    <div>
+    <div className=''>
       {loading ? (
         <Backdrop
           sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
@@ -61,7 +61,9 @@ const Onehalf = () => {
         <>
           {filteredBabies.length > 0 ? (
             <>
+            <div className=''>
               <h2 className='text-center text-2xl'>අවුරුදු 1 1/2 කණ්ඩායම</h2>
+              <div >
               {filteredBabies.map((baby, index) => (
                 <div key={index} className='p-5 '>
                   <div className=' bg-sky-200 py-3 px-2 rounded-lg leading-8 '>
@@ -73,10 +75,13 @@ const Onehalf = () => {
                   </div>
                 </div>
               ))}
+              </div>
+              </div>
             </>
           ) : (
             <p>No babies found .</p>
           )}
+          
         </>
       )}
     </div>

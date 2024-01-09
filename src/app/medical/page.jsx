@@ -58,22 +58,23 @@ function Medical() {
 
         {modalVisible &&  (
           <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center ">
-            <div className="modal-bg fixed top-0 left-0 w-full h-full bg-black opacity-50 "></div>
-            <div className="modal-container bg-white w-5/6 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto pb-5">
+            <div className="modal-bg fixed top-0 left-0 w-full h-full bg-black opacity-50 " onClick={() => setModalVisible(false)}></div>
+            
+            <div className="modal-container bg-white w-5/6 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto pb-10 h-5/6">
               <div className="modal-content py-4 text-left px-6 ">
-
+              <button
+                  onClick={() => setModalVisible(false)}
+                  className=" bg-red-600 hover:bg-gray-400  py-1 px-3 rounded float-right text-white"
+                >
+                  Close
+                </button>
                 <div className='text-center py-3'>
                   
                 </div>
 
                 {renderComponent()}
 
-                <button
-                  onClick={() => setModalVisible(false)}
-                  className=" bg-red-600 hover:bg-gray-400 text-gray-800 py-1 px-3 rounded float-right"
-                >
-                  Close
-                </button>
+             
               </div>
             </div>
           </div>
