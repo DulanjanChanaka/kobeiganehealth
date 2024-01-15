@@ -32,10 +32,11 @@ const Clinics = () => {
                         <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols text-center gap-4 justify-center items-center'>
                                 <div className='m-auto'>
-                                    <Image src='/Assets/hospital.png' width={94} height={94} alt='/' className='rounded-lg' />
+                                    <Image src='/Assets/hospital.png' width={70} height={70} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold '>කොබෙ/ රෝහල් සායන</h3>
+                                    <h3 className='text-center text-lg font-bold '>කොබෙයිගනේ රෝහල් </h3>
+                                    <h3 className='text-center text-lg font-bold '> සායන</h3>
                                 </div>
                             </div>
                         </div>
@@ -45,10 +46,11 @@ const Clinics = () => {
                         <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                                 <div className='m-auto'>
-                                    <Image src='/Assets/mother.png' width={94} height={94} alt='/' className='rounded-lg' />
+                                    <Image src='/Assets/mother.png' width={70} height={70} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold '>මාතෘ හා ළඳරු සායන</h3>
+                                    <h3 className='text-center text-lg font-bold '>මාතෘ හා ළඳරු ළමා සායන</h3>
+                                    <h3 className='text-center text-lg font-bold '>බොරලුවැව </h3>
                                 </div>
                             </div>
                         </div>
@@ -71,10 +73,11 @@ const Clinics = () => {
                         <div className='p-6 bg-slate-50 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 h-[180px]'>
                             <div className='grid grid-cols  text-center gap-4 justify-center items-center'>
                                 <div className='m-auto'>
-                                    <img src='/Assets/women.png' width={94} height={94} alt='/' className='rounded-lg' />
+                                    <img src='/Assets/women.png' width={70} height={70} alt='/' className='rounded-lg' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center'>
-                                    <h3 className='text-center text-lg font-bold '>සුවනාරි සායන </h3>
+                                    <h3 className='text-center text-lg font-bold '>සුවනාරි / පවුල් සංවිධාන</h3>
+                                    <h3 className='text-center text-lg font-bold '> සායන </h3>
                                 </div>
                             </div>
                         </div>

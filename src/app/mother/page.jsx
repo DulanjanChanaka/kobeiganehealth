@@ -99,7 +99,7 @@ function Mother() {
                                 May: <span className='text-blue-600  px-10'>{selectedPost.may}</span>
                             </p>
                             <p className="text-gray-600 text-base font-semibold py-3">
-                                June: <span className='text-blue-600  px-10'>{selectedPost.march}</span>
+                                June: <span className='text-blue-600  px-10'>{selectedPost.june}</span>
                             </p>
                             <p className="text-gray-600 text-base font-semibold py-3">
                                 July: <span className='text-blue-600  px-10'>{selectedPost.july}</span>

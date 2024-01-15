@@ -94,7 +94,7 @@ return (
 
                         <div className="p-6  bg-white mb-2 rounded-lg ">
                         <p className="text-gray-600 text-base font-semibold ">
-                                June: <span className='text-blue-600  px-10'>{item.march}</span>
+                                June: <span className='text-blue-600  px-10'>{item.june}</span>
                             </p>
                         </div>
 
