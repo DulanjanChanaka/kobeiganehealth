@@ -1,84 +1,73 @@
 "use client"
 import React, { useState } from 'react';
-import Modal from 'react-modal';
 import Navbar from '@/components/Navbar';
-import BabyComponent from '@/components/baby/twomonth';
-import Fourmonth from '@/components/baby/fourmonth';
-import Sixmonth from '@/components/baby/sixmonth';
-import Ninemonth from '@/components/baby/ninemonth';
-import Oneyear from '@/components/baby/oneyear';
-import Onehalf from '@/components/baby/onehalf';
-import Threeyears from '@/components/baby/threeyear';
-import Fiveyears from '@/components/baby/fiveyears';
+import Modal from 'react-modal';
+import BabyComponent from '@/components/BabyComponent';
 
 function Medical() {
-  const [selectedMonth, setSelectedMonth] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
-  const components = {
-    '2 Month': <BabyComponent />,
-    '4 Month': <Fourmonth/>,
-    '6 Month': <Sixmonth/>,
-    '9 Month': <Ninemonth/>,
-    '1 year': <Oneyear/>,
-    'onehalf years': <Onehalf/>,
-    '3 years': <Threeyears/>,
-    
-    '5 years': <Fiveyears/>,
 
-    // '6 Month': <SixMonthComponent />,
-    // ... more components
-  };
+  const components = [
+    { label: '2 Month', filter: (age) => age.year === 0 && age.month === 2 && age.day > 15 && age.day < 30 },
+    { label: '4 Month', filter: (age) => age.year === 0 && age.month === 3 && age.day > 15 && age.day < 30 },
+    { label: '6 Month', filter: (age) => age.year === 0 && age.month === 5 && age.day > 15 && age.day < 30 },
+    { label: '9 Month', filter: (age) => age.year === 0 && age.month === 8 && age.day > 15 && age.day < 30 },
+    { label: '1 Year', filter: (age) => age.year === 1 && age.month === 0 && age.day > 15 && age.day < 30 },
+    { label: '1.5 Years', filter: (age) => age.year === 1 && age.month === 5 && age.day > 15 && age.day < 30 },
+    { label: '3 Years', filter: (age) => age.year === 2 && age.month === 11 && age.day > 15 && age.day < 30 },
+    { label: '5 Years', filter: (age) => age.year === 4 && age.month === 11 && age.day > 15 && age.day < 30 },
+  ];
 
-  const handleMonthClick = (month) => {
-    setSelectedMonth(month);
+  const handleOpenModal = (component) => {
+    setSelectedComponent(component);
     setModalVisible(true);
   };
 
-  const renderComponent = () => {
-    return components[selectedMonth] || null;
-  };
-
   return (
-    <div>
+    <div  className="min-h-screen bg-cover bg-center"
+    style={{
+      backgroundImage:
+        "url('https://firebasestorage.googleapis.com/v0/b/petbank-8e53e.appspot.com/o/free-photo-of-mother-embracing-her-baby-daughter.jpg?alt=media&token=6073e654-9247-484e-aa22-8a372fa0a54b')",
+    }}>
       <div className="top-0 left-0 sticky">
         <Navbar />
       </div>
-      <div className='pt-[100px] '>
-        <ul className='flex lg:grid-cols-2 lg:grid  flex-col gap-5  mx-5 text-center text-white py-2 lg:mx-40 lg:pt-10'>
-          <li onClick={() => { handleMonthClick('2 Month'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg cursor-pointer lg:py-5'>2 Month</li>
-          <li onClick={() => handleMonthClick('4 Month')} className='bg-blue-500 py-2 rounded-lg cursor-pointer lg:py-5'>4 Month</li>
-         
-          <li onClick={() => { handleMonthClick('6 Month'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>6 Month</li>
-          <li onClick={() => { handleMonthClick('9 Month'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>9 Month</li>
-          <li onClick={() => { handleMonthClick('1 year'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>12 Month (1 Year)</li>
-          <li onClick={() => { handleMonthClick('onehalf years'); setModalVisible(true); }}  className='bg-blue-500 py-2 rounded-lg lg:py-5'>18 Month (1 1/2 Years)</li>
-          <li onClick={() => { handleMonthClick('3 years'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>3 Years</li>
-          <li onClick={() => { handleMonthClick('5 years'); setModalVisible(true); }} className='bg-blue-500 py-2 rounded-lg lg:py-5'>5 Years</li>
+      <div className="pt-[100px]">
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-5 text-center text-white py-2 lg:mx-40 lg:pt-10">
+          {components.map((component, index) => (
+            <li
+              key={index}
+              onClick={() => handleOpenModal(component)}
+              className="bg-pink-400 py-2 rounded-lg cursor-pointer lg:py-5"
+            >
+              {component.label}
+            </li>
+          ))}
         </ul>
 
-        {modalVisible &&  (
-          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center ">
-            <div className="modal-bg fixed top-0 left-0 w-full h-full bg-black opacity-50 " onClick={() => setModalVisible(false)}></div>
-            
-            <div className="modal-container bg-white w-5/6 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto pb-10 h-5/6">
-              <div className="modal-content py-4 text-left px-6 ">
-              <button
-                  onClick={() => setModalVisible(false)}
-                  className=" bg-red-600 hover:bg-gray-400  py-1 px-3 rounded float-right text-white"
-                >
-                  Close
-                </button>
-                <div className='text-center py-3'>
-                  
-                </div>
+        <Modal
+  isOpen={modalVisible}
+  onRequestClose={() => setModalVisible(false)}
+  overlayClassName="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50"
+  className="relative bg-white rounded-lg shadow-lg max-w-lg w-full mx-4 overflow-hidden max-h-[90vh] overflow-y-auto"
+>
+  {/* Close Button */}
+  <button
+    onClick={() => setModalVisible(false)}
+    className="absolute top-4 right-4 text-white hover:text-gray-900 focus:outline-none py-1 px-2 rounded-full "
+  >
+    ✖
+  </button>
 
-                {renderComponent()}
+  {/* Modal Content */}
+  <div className="p-6">
+    {selectedComponent && (
+      <BabyComponent filter={selectedComponent.filter} title={selectedComponent.label} />
+    )}
+  </div>
+</Modal>
 
-             
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
