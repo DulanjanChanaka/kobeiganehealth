@@ -1,15 +1,20 @@
-// store/babySlice.js
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+"use client";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-export const fetchBabyData = createAsyncThunk('baby/fetchBabyData', async () => {
-  const response = await fetch('https://incomparable-brioche-b13e68.netlify.app/api/babies');
-  if (!response.ok) throw new Error('Failed to fetch data');
-  const data = await response.json();
-  return data;
-});
+export const fetchBabyData = createAsyncThunk(
+  "baby/fetchBabyData",
+  async () => {
+    const response = await fetch(
+      "https://incomparable-brioche-b13e68.netlify.app/api/babies"
+    );
+    if (!response.ok) throw new Error("Failed to fetch data");
+    const data = await response.json();
+    return data;
+  }
+);
 
 const babySlice = createSlice({
-  name: 'baby',
+  name: "baby",
   initialState: {
     data: [],
     loading: false,

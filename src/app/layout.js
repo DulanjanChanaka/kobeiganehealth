@@ -1,8 +1,10 @@
+"use client";
 import Head from 'next/head'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Provider } from 'react-redux'
 import store from '@/redux/store'
+import Script from "next/script";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,17 +30,22 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGHES7MCL7"></script>
-      <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-FGHES7MCL7');
-            `,
-          }}
-        />
+      <Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-FGHES7MCL7"
+  strategy="afterInteractive"
+/>;
+<Script
+  id="google-analytics"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FGHES7MCL7');
+    `,
+  }}
+/>;
         
         <Provider store={store}>
           {children}

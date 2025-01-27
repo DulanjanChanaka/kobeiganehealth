@@ -1,10 +1,10 @@
-// components/BabyComponent.js
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchBabyData } from '../redux/slices/babySlice';
-import BabyList from './BabyList';
-import Backdrop from '@mui/material/Backdrop';
-import CircularProgress from '@mui/material/CircularProgress';
+"use client";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchBabyData } from "../redux/slices/babySlice";
+import BabyList from "./BabyList";
+import Backdrop from "@mui/material/Backdrop";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const BabyComponent = ({ filter, title }) => {
   const { data, loading } = useSelector((state) => state.baby);
@@ -26,12 +26,17 @@ const BabyComponent = ({ filter, title }) => {
     };
   };
 
-  const filteredBabies = data.filter((baby) => filter(calculateAge(baby.birthday)));
+  const filteredBabies = data.filter((baby) =>
+    filter(calculateAge(baby.birthday))
+  );
 
   return (
     <div>
       {loading ? (
-        <Backdrop sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }} open={loading}>
+        <Backdrop
+          sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+          open={loading}
+        >
           <CircularProgress color="inherit" />
         </Backdrop>
       ) : (
