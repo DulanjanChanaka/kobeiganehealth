@@ -8,14 +8,18 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Kobeigane Health",
-  description: "Kobeigane Public Health Division",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Metadata can remain here */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Kobeigane Health</title>
+        <meta
+          name="description"
+          content="Kobeigane Public Health Division"
+        />
+      </head>
       <body className={inter.className}>
         {/* Google Analytics Script */}
         <Script
@@ -36,7 +40,9 @@ export default function RootLayout({ children }) {
         />
 
         {/* Redux Provider */}
-        <Provider store={store}>{children}</Provider>
+        <Provider store={store}>
+          {children}
+        </Provider>
       </body>
     </html>
   );
